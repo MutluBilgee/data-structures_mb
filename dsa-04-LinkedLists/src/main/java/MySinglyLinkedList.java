@@ -45,7 +45,6 @@ public class MySinglyLinkedList {
         Node ptr2=head;
         Node prev=null;
         // move ptr2 k-1 times
-
         for (int i = 0; i < k-1; i++) {
             ptr2=ptr2.next;
         }
@@ -69,7 +68,6 @@ public class MySinglyLinkedList {
             prev.next=ptr1.next;
             ptr1.next=null;
             size--;
-
         }
     }
     void add(int data) {
@@ -90,7 +88,6 @@ public class MySinglyLinkedList {
         // check if empty
         if(isEmpty()) System.out.println("List is empty!!!");
         // assign prev and current with the head
-
         Node prev=head;
         Node current=head;
         while(current!=null){
@@ -116,9 +113,7 @@ public class MySinglyLinkedList {
             // move forward on the elements of the list
             prev=current;
             current=current.next;
-
         }
-
     }
     int indexOf(int id){
         if (isEmpty()) return -1;
@@ -160,18 +155,11 @@ public class MySinglyLinkedList {
             }
         }
         while(ptr2.next.next!=null) {
-
             ptr1=ptr1.next;
             ptr2=ptr2.next;
-
         }
-
         ptr1.next=ptr1.next.next;
         ptr1=ptr1.next;
         ptr1=null;
-
-
     }
-
-
 }
