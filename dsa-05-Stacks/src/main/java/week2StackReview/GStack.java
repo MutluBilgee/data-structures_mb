@@ -20,3 +20,4 @@ public class GStack<T> {
         return list.size;
     }
 }
+//Adapter pattern in OOP. This is a kind of design pattern
