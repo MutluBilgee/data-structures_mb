@@ -4,13 +4,13 @@ public class PerformanceCalculationOfSearchMethods {
         for (int i = 0; i < 1000000; i++) {
             numbers[i] = i;
         }
-        long[] linearSearchResults = linearSearch(numbers, 333333);
+        long[] linearSearchResults = linearSearch(numbers, 333330);
         System.out.println("Linear Search Results:  " + linearSearchResults[0] + " miliseconds and " + linearSearchResults[1] + " comparisons..");
-        long[] binarySearchResults = binarySearchIterative(numbers,333333);
+        long[] binarySearchResults = binarySearchIterative(numbers,333330);
         System.out.println("binary Search Results:  " + binarySearchResults[0] + " miliseconds and " + binarySearchResults[1] + " comparisons..");
-        long[] ternarySearchResults = ternarySearchIterative(numbers, 333334);
+        long[] ternarySearchResults = ternarySearchIterative(numbers, 333330);
         System.out.println("Ternary Search Results:  " + ternarySearchResults[0] + " miliseconds and " + ternarySearchResults[1] + " comparisons..");
-        long[] jumpSearchResults = jumpSearch(numbers, 333333);
+        long[] jumpSearchResults = jumpSearch(numbers, 333330);
         System.out.println("Jump Search Results:  " + jumpSearchResults[0] + " miliseconds and " + jumpSearchResults[1] + " comparisons..");
     }
 
